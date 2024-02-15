@@ -7,3 +7,47 @@
     <link rel="stylesheet" href="/css/output.css">
 </head>
 <body class="font-semibold">
+    
+    <h1 id="h1" class="text-center mt-10 text-4xl font-cambria">Tower of Hanoi</h1>
+
+    <p class="text-center mt-5">Number of movements: <span id="moveCount">0</span></p>
+
+    <div class="flex justify-center">
+
+        <div id="column1" class="w-400px h-80 bg-gray-400 m-2 flex flex-col justify-end rounded-3xl border-2 border-black dropzone" ondragover="allowDrop(event)" ondrop="drop(event)">
+
+            <div id="item1" class="bg-red-600 w-40 disk" draggable="true" ondragstart="drag(event)"></div>
+
+            <div id="item2" class="bg-purple-600 w-52 disk" draggable="true" ondragstart="drag(event)"></div>
+
+            <div id="item3" class="bg-yellow-600 w-64 disk" draggable="true" ondragstart="drag(event)"></div>
+
+            <div id="item4" class="bg-blue-600 w-80 disk" draggable="true" ondragstart="drag(event)"></div>
+
+            <div id="item5" class="bg-green-600 w-96 disk" draggable="true" ondragstart="drag(event)"></div>
+
+        </div>
+
+        <div id="column2" class="w-400px h-80 bg-gray-400 m-2 flex flex-col justify-end rounded-3xl border-2 border-black dropzone" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+
+        <div id="column3" class="w-400px h-80 bg-gray-400 m-2 flex flex-col justify-end rounded-3xl border-2 border-black dropzone" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+
+    </div>
+
+    <div class="text-center mt-5">
+        <input type="button" value="RESET" class="reset">
+
+        <input type="range" name="range-name" id="rangeInput" min="2" max="5" value="5"> Number of Disks: 
+        <span id="rangeValue">5</span> <span>| minimum amount of movements: </span><span id="perfectMovement">31</span>
+        
+    </div>
+
+    <h3 class="text-2xl ml-10 mt-10">Rules:</h3>
+
+    <p class="ml-10 text-lg mt-5">1. Move only one disk at a time</p>
+    <p class="ml-10 text-lg">2. A disc with a larger diameter can never rest on a disc with a smaller diameter</p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
