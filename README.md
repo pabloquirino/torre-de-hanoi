@@ -1,5 +1,5 @@
 # Torre de Hanoi
-Esse projeto foi feito para praticar conceitos de drag and drog em Javascript.
+Esse projeto foi feito para praticar conceitos de drag and drop em Javascript.
 
 ### Descrição do quebra cabeça:
 Projeto simulando um quebra cabeça chamado torre de hanoi, que envolve mover discos de tamanhos diferentes entre três hastes, com a restrição de que um disco maior nunca pode ficar em cima de um disco menor. O objetivo é mover todos os discos da haste de origem para a haste de destino, de modo que eles fiquem empilhados na haste de destino na mesma ordem em que estavam na haste de origem. 
